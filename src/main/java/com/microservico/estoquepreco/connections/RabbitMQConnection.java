@@ -20,15 +20,15 @@ public class RabbitMQConnection {
 	public RabbitMQConnection(AmqpAdmin amqpAdmin) {
 		this.amqpAdmin = amqpAdmin;
 	}
-	
+	// Fila duravel sim, exclusiva false, autodelete false
 	private Queue fila(String nomeFila) {
 		return new Queue(nomeFila, true, false, false);
 	}
-	
+	// Fila duravel sim, exclusiva false, autodelete false	
 	private DirectExchange trocaDireta() {
 		return new DirectExchange(NOME_EXCHANGE);
 	}
-	
+	// Binding pede a fila, o destino desta fila, nome da exchange e nome do mapeamento que será feito
 	private Binding relacionamento(Queue fila, DirectExchange troca) {
 		return new Binding(fila.getName(), Binding.DestinationType.QUEUE, troca.getName(), fila.getName(), null);
 	}
