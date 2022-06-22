@@ -8,7 +8,7 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.stereotype.Component;
 
-import com.microservico.estoquepreco.contantes.RabbitmqContantes;
+import com.librabbitmq.librabbitmq.contantes.RabbitmqContantes;
 
 @Component
 public class RabbitMQConnection {

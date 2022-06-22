@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.microservico.estoquepreco.contantes.RabbitmqContantes;
-import com.microservico.estoquepreco.dto.PrecoDTO;
+import com.librabbitmq.librabbitmq.contantes.RabbitmqContantes;
+import com.librabbitmq.librabbitmq.dto.PrecoDTO;
 import com.microservico.estoquepreco.service.RabbitmqService;
 
 @RestController
